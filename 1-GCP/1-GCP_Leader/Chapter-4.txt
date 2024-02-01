@@ -1,0 +1,355 @@
+Understanding Cloud Security and Operations
+
+
+I. Finance Governance in the Cloud
+
+
+i. Fundamentals of cloud cost management
+
+OPex is emphasised when a company moves to the cloud, so spending must be
+controlled.
+
+Solution to cloud spends
+
+- People
+    They can be assigned for the financial decision, working with IT
+    teams to make the best decision.
+
+- Process
+    The finance team can check with IT teams, would help check whether they
+    are managing their resources optimally
+
+
+- Technology
+    There are technologies that can monitor the cost and control cost and usga
+
+
+
+ii. Total Cost of Ownership
+
+Total cost of ownership is the total cost of the layers within the infrastructure and
+operational cost
+
+When companies move to the cloud, the CAPex reduce and Operational cost is more of a focus
+
+
+iii. Best practices when managing cost
+
+- Identify individual or team that will manage it
+
+- Learn the difference invoice and cost tools
+
+- Use cost management tools for accountability #they can give insight into the cost
+
+
+
+II. Security in the cloud
+
+i. Privacy, security, compliance and availability
+
+- Privacy
+    This is the data an organization or individual has access to and can share.
+
+- Security
+    This is the policy that ensures the data is protected
+
+- Compliance
+    This is the standard by the 3rd party like govt
+
+- Availability
+    This is making sure the data is available when needed
+
+
+# data is encrypted by default
+
+
+ii. Cybersecurity challenges
+
+Because we live online, cyberattack is becoming common.
+
+- Phishing attacks
+- Physical damage
+- Malware
+- Unsecured 3rd party system
+- Lack of expertise
+
+
+iii. Shared Responsibility Model
+
+Client secure access to data, and cloud secure the underlying infrastructure
+
+
+- Data Responsibility in Cloud vs. On-Premises:
+  - On-premises data management: Organization is solely responsible for all aspects of security.
+  - Cloud technology: Responsibility is shared between the business (data controller) and the cloud provider (data processor).
+
+- Cloud Service Provider's Role (Google Cloud):
+  - Data processor responsible for securing the underlying infrastructure.
+  - Implements defense in depth approach, offering multiple security layers.
+
+- Customer's Responsibility:
+  - Core responsibility is to secure access to data.
+  - Partnering with the cloud provider in a shared model.
+
+- Google Cloud's Infrastructure Security Layers:
+  1. Hardware:
+     - Google designs and manufactures its own servers, storage, and networking gear.
+     - High-security data centers worldwide.
+     - Embedded chip (Titan) checks machine integrity during boot-up.
+
+  2. Software:
+     - Titan microcontroller verifies operating systems and software stack.
+     - Server not allowed onto the network until health is confirmed.
+
+  3. Storage:
+     - Encryption at rest: Data stored on physical media (e.g., hard disk) is encrypted by default.
+     - Data broken into pieces, encrypted with data encryption keys (DEK), and wrapped with key encryption keys (KEK).
+     - Encrypted chunks and wrapped keys distributed across Google's infrastructure.
+
+  4. Identity:
+     - Zero trust model: Every user and machine must strongly authenticate at every stage.
+
+  5. Network:
+     - Encryption in transit: Data moving into and out of Google's infrastructure is encrypted.
+     - Multi-layer defense against network attacks like DDoS attacks.
+
+  6. Operations:
+     - Global team of 900+ security experts monitoring the system 24/7.
+     - Detect and respond to attacks and issues.
+
+- Additional Features and Policies:
+  - Google Cloud provides customers with features and policies to control access to their data.
+
+- Partnership Model:
+  - Customers and cloud provider (Google Cloud) work in partnership to ensure overall security.
+
+- Continuous Learning and Improvement:
+  - Google leverages 20 years of experience to design and secure its infrastructure.
+  - Constant improvement in response to evolving security challenges.
+
+
+
+
+
+- IT Team Responsibilities in Cloud Security Model:
+  - Old methods of securing data may not suffice in the cloud, prompting the need for operational changes.
+  - Reassessment of existing security policies and practices for optimal use of cloud products.
+
+- Key Focus Areas for IT Teams:
+  1. Control Data Access:
+     - Establish a comprehensive understanding of who has access to what data.
+     - Implement granular access policies, defining user privileges on specific cloud resources.
+     - Enable multifactor authentication to enhance security without compromising user experience.
+     - Use security keys as an additional layer of protection against phishing.
+
+  2. Maintain Visibility:
+     - Ensure visibility into data access activities, including user actions and timelines.
+     - Utilize logging and monitoring tools, many of which are natively provided within Google Cloud services.
+
+  3. Be Prepared for Incidents:
+     - Develop a plan to handle data breaches, assuming they may occur.
+     - Establish situational awareness to understand the extent of a breach.
+     - Foster an open, blameless culture that enables effective teamwork in stressful situations.
+     - Maintain operational readiness to effectively respond to incidents.
+
+- Google Cloud Support for IT Teams:
+  - Google Cloud provides best practices, templates, products, and solutions to help IT teams control data access, maintain visibility, and prepare for breaches.
+  - Emphasizes collaboration between the cloud provider and the organization for data safety.
+
+
+iv. IAM
+
+- Cloud Identity Access Management (IAM):
+  - A Google Cloud solution for controlling and managing access to resources, ensuring security and data integrity.
+
+- IAM Policy Components:
+  1. Who:
+     - Google account, Google group, service account, or Google Workspace/Cloud Identity domain.
+
+  2. Can Do What:
+     - Defined by IAM roles.
+
+  3. On Which Resource:
+     - Specifies the target resource.
+
+- IAM Role Types:
+  1. Primitive Roles:
+     - Owner, editor, and viewer.
+     - Broad and affect access to all resources in a project.
+     - Owner has the highest privileges, including managing roles and permissions.
+
+  2. Predefined Roles:
+     - Aligned with typical responsibilities of users using specific Google Cloud services.
+     - Collection of permissions defined by the cloud service.
+     - Applied at various levels such as project, folder, or organization.
+
+  3. Custom Roles:
+     - Enables more granular control.
+     - Allows defining roles tailored to specific needs.
+     - Follows the least privilege model, granting minimal privilege needed for each user's job.
+
+- Role Application Examples:
+  - Compute Engine and Cloud Bigtable provide predefined roles specific to their services.
+  - Custom roles can be created for more specific requirements.
+
+- Role Management:
+  - Organizations can map job functions to specific groups.
+  - Groups are assigned specific roles for specific resources.
+  - Helps ensure users have access only to what is necessary for their roles.
+
+- Benefits of IAM:
+  - Supports a least privilege model.
+  - Facilitates easy mapping of job functions to groups, simplifying permission management.
+  - Enhances security by ensuring users have access only to required resources.
+
+- Efficiency in Permission Management:
+  - Despite the complexity of permissions, organizations can efficiently map job functions to groups, reducing administrative burden.
+
+- Overall Security:
+  - Effective use of IAM helps maintain security when using Google Cloud products and services.
+
+
+
+v. Resource hierarchy
+
+- Resource Hierarchy in Google Cloud:
+  - The structure that organizes how an organization's Google Cloud environment is managed.
+
+- Analogy to Project Management:
+  - Similar to organizing project files and resources for efficient collaboration.
+
+- Components of Resource Hierarchy:
+  1. Project:
+     - Basis for enabling and using Google Cloud capabilities.
+     - Contains resources such as Compute Engine, BigQuery, etc.
+     - Grouping of resources tied to the project.
+
+  2. Folder:
+     - Organizational unit that can contain projects or other folders.
+     - Allows logical grouping to match the company's organizational structure.
+     - Inheritance of permissions from folders above it and the organization.
+
+  3. Organization:
+     - Top-level domain managed through Cloud Identity.
+     - Managed via the Cloud Console, enabling administrators to control resources and permissions.
+     - Sets organization-wide rules and policies cascading down the hierarchy.
+
+- Roles and Permissions:
+  - Administrators can set permissions for folders and projects, controlling creation, editing, and viewing of resources.
+  - Flexible structure to meet the organization's needs.
+
+- Additional Roles:
+  1. Cloud Billing Accounts:
+     - Track charges for associated projects.
+     - Users can associate projects and view spend.
+     - Administrators can unlink projects, set budgets, and contact billing support.
+     - Google recommends a single cloud billing account per organization.
+
+  2. Payment Profiles:
+     - Google-level resource outside of Google Cloud.
+     - Used to pay for all Google services (Cloud, Ads, Chrome licenses).
+     - Provides efficient spend management and visibility with a single point of resource management.
+
+- Operational Shifts:
+  - Monitoring cloud services and resources is discussed as the third operational shift in the next module.
+
+- Flexibility and Efficiency:
+  - The resource hierarchy allows for flexibility in organizing resources based on the organization's structure.
+  - Efficient management of spend with a recommended single cloud billing account per organization.
+
+
+III.  Monitoring Cloud IT services and operations
+
+i. IT development and operations challenges
+
+
+
+1. Service Downtime Challenges:
+   - Service downtime can result from planned maintenance or unexpected system failures.
+   - Developers face challenges in improving customer-facing services and must schedule downtimes for updates.
+   - Team structure issues may lead to collaboration problems between developers and operators.
+
+2. Developer-Operator Divide:
+   - Developers focus on agile coding and rapid deployment, aiming for frequent updates and fixes.
+   - Operators prioritize system stability and reliability, often preferring a slower pace.
+
+3. Need for Adaptation in Cloud Operations:
+   - Organizations transitioning to the cloud should adjust expectations for 100% service availability.
+   - Cloud providers use SLAs, SLOs, and SLIs to define and measure service availability.
+   - An error budget indicates the acceptable level of errors before impacting end users.
+
+4. Service Level Agreement (SLA):
+   - A contractual commitment between the cloud provider and the customer, setting baseline service expectations.
+   - Non-compliance with SLA may result in costs incurred by the provider.
+
+5. Service Level Objective (SLO):
+   - A performance goal shared between the cloud provider and the customer.
+   - Meeting or exceeding the SLO ensures user satisfaction.
+
+6. Service Level Indicator (SLI):
+   - A measure of service quality, often including reliability and errors.
+
+7. Error Budget:
+   - The permissible amount of accumulated errors before negatively impacting end-user experience.
+   - Provides developers clarity on the number of failed fixes allowed.
+
+8. Adapting to Cloud Environment:
+   - By using SLA, SLO, SLI, and error budgets, businesses can optimize their cloud operations for improved customer experiences.
+
+
+ii. DevOps and SRE
+
+DevOps:
+- Philosophy: DevOps (Developers Operations) aims to foster collaboration and accountability within developer and operations teams.
+- Objectives:
+  1. Reduce Silos: Encourages collaboration by breaking down barriers across teams.
+  2. Accept Failure: Recognizes the inevitability of failures and encourages learning from them.
+  3. Implement Gradual Change: Advocates small, incremental changes for easier review and quicker recovery from issues.
+  4. Leverage Tooling and Automation: Emphasizes automation of manual tasks to focus on essential work.
+  5. Measure Everything: Stresses the importance of measurement as a critical gauge for success.
+
+Site Reliability Engineering (SRE):
+- Discipline: Applies software engineering aspects to operations, aiming for highly scalable and reliable software systems.
+- Goals:
+  1. Shared Ownership: Encourages joint responsibility between developers and operations, defining Service Level Objectives (SLOs) and calculating error budgets.
+  2. Accept Failure as Normal: Promotes an iterative, collaborative culture with blameless lessons learned discussions after incidents.
+  3. Implement Gradual Changes: Reduces the cost of failure by rolling out changes gradually to a small user percentage.
+  4. Leverage Tooling and Automation: Focuses on toil automation to reduce manual, repetitive work.
+  5. Measure Everything: Involves tracking and measuring aspects related to toil, reliability, and system health.
+
+Alignment with DevOps Objectives:
+- SRE best practices align with DevOps objectives, emphasizing shared ownership, acceptance of failure, gradual changes, tooling automation, and comprehensive measurement.
+- Both DevOps and SRE aim for improved collaboration, iterative development, and enhanced customer experiences.
+
+Outcome:
+- Both DevOps and SRE intend to break down organizational barriers for faster and better customer experience delivery.
+- SRE shifts the mindset from 100% availability to 99.99% or 99.999%, allowing iterative updates with minimal downtime.
+
+
+iii. Google Cloud resource monitoring tools
+
+In summary, when transitioning from a traditional on-premises environment to a cloud service provider like Google Cloud,
+IT teams no longer have physical access to servers. To address this, Google Cloud's Operations Suite offers tools for monitoring,
+troubleshooting, and improving application performance. The suite is categorized into Operations Focus tools and Application Performance Management tools.
+
+Operations Focus Tools:
+1. Cloud Monitoring: Gathers predefined sets of metrics, providing visibility into the performance, uptime,
+and overall health of cloud-powered applications. It evaluates infrastructure performance on a modular level.
+2. Cloud Logging: Monitors log files for insights into application and infrastructure issues.
+It is a fully managed service that ingests logs from various environments, enabling faster application troubleshooting.
+
+Application Performance Management Tools:
+1. Cloud Debugger: Allows real-time inspection of running applications without affecting end-users.
+Developers can analyze the state of the code in production to find and fix bugs without downtime.
+2. Cloud Trace: A distributed tracing system that helps developers debug, fix, and optimize code,
+especially in microservices or containerized architectures.
+
+Key Features and Benefits:
+- Visibility: Cloud Monitoring and Cloud Logging provide out-of-the-box observability needed to monitor the IT infrastructure and applications.
+- Automation: Tools automatically ingest logs and metrics from various Google Cloud services, including Google Kubernetes Engine, BigQuery, and Cloud Spanner.
+- Performance Monitoring: Cloud Debugger and Cloud Trace enable real-time inspection and distributed tracing for application performance analysis.
+- Efficiency: IT teams gain precise insight into their cloud IT environment without physical server access, allowing them to do more than in on-premises environments.
+- Convenience: By running cloud IT services, Google Cloud removes the inconvenience of maintaining on-premises servers, databases, and applications.
+
+As companies embrace the cloud, these tools empower IT teams to effectively manage and optimize their cloud infrastructure,
+providing capabilities beyond what traditional on-premises environments could offer.

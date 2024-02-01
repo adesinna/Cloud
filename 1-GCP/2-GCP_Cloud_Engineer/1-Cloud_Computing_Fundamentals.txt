@@ -1,0 +1,32 @@
+What is cloud computing ?
+
+This is the delivery of a shared pool of on-demand computing services over the public internet, that can be rapidly
+provisioned and released with minimal management effort or servie provider interaction.
+
+
+Characteristics of cloud
+
+- On-demand Self Service
+
+    Provision resources automatically without requiring human interaction
+
+- Broad Network Access
+
+    It is available over the network, so you can connect from anywhere
+
+- Resource Pooling
+
+    Pooled resources to support a multi-tenant model allowing multiple customers to share the same applications or
+    the same physical infrastructure.
+
+
+- Rapid Elasticity
+
+    Rapidly provision and de-provision any of the cloud computing resources
+
+
+- Measured Service
+    Resource usage can be monitored, controlled and reported using metering capabilities.
+
+
+

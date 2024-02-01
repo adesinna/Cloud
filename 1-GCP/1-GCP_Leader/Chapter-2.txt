@@ -1,0 +1,188 @@
+Innovating with Data and Google Cloud
+
+I. The Value of Data
+
+i. The role of data in digital transformation
+
+Data is any information that is useful to an organization, business now have
+access to a glut of new data due to digital transformation, such as the amount of time
+a customer spend on an app, the reaction of a customer to a new product etc
+
+This data can be used to unlock business value, GCP allows you to bring data that are in
+silos together to make real time decision.
+
+Businesses can process terabytes of data in real-time.
+Businesses can query their data and retrieve results instantly.
+
+
+ii. Leveraging data in Organization
+
+
+- Identify and map your data
+    This is a chart of all the data use in all part of the business.
+    - user data # data of customers
+    - corporate data # data of workers
+    - industry data # data of the sector at large
+
+Intersection between these data sets can give you insights, to create valuable insights
+
+
+
+iii. Understanding data types
+
+We have two main types
+
+- Structured
+    These are organized data, example customer names, records, and it can be easily stored
+    and managed in databases
+
+- Unstructured
+    These are not organized data, example are images, audio files, videos, they can be stored as
+    objects. It can be also stored as blobs
+
+
+Although it is hard to analysis unstructured data, but digital transformation can help with this.
+
+
+
+iv. Important data consideration
+
+There are ethics about getting and analysing data. There should be security compliance that
+must be followed. Like the data that is actually needed to train the model.
+
+
+
+
+II Data Consolidation and Analytics
+
+
+
+i. Migrating data to the cloud
+
+Many organization still have their data stored on prem, how data is stored is critical.
+When you store data on prem, you are responsible for the infrastructure and scaling which
+cloud be time and resources consuming.
+
+Cloud allows you to store data in an elastic way, it is faster to analyze in real time and predict future.
+
+
+
+ii.  Cloud Databases
+
+They are many solution to storing data, one of them is database.
+A database is an organized collection of data, generally stored in tables and accessed
+electronically from a computer system.
+
+
+Data Integrity
+    This is the accuracy and consistency of data stored.
+
+Scalability
+    This is when it can easily be scale
+
+
+GCP database
+
+Cloud SQL
+    This is a relational database
+
+        Usage
+        - for websites
+
+
+Cloud Spanner
+    This data is copy for different regions, it creates replicas all over the regions.
+
+
+
+iii. Cloud data warehouses
+
+    Data warehouses collects data from multiple places, including databases.
+
+    They are designed to analyze this data, data warehouses are what are used.
+
+
+GCP data warehouse
+
+Big Query
+    - They are serverless and scalable for analyzing
+
+Pub/Sub a real time ingestion of data and Dataflow a large scale processing of data
+can be used together to process unstructured or semi structured data, then sent to big Query
+for analysis.
+
+
+
+
+iv. Cloud Data Lakes
+
+It is a data repository designed to store, process and secure large amount of data,
+structured, semi structured and unstructured, they do not mind the format. They contain
+different products. They tend to hold 'back up' data
+
+Correct
+
+ Cloud storage benefit
+
+ - any amount of data can be stored
+ - low latency
+ - accessible from anywhere in the world
+
+
+
+
+v. Business Intelligence Solution
+
+This serves the data analytics, Looker is used by GCP to do this. This allows anyone
+to access the data and innovate. It share interactive dashboard insight.
+
+
+III. Innovation with Machine Learning
+
+i. What is ML
+
+Most data are always backward looking data to identify trends, however, to use data for values and forecast, using
+ML.
+
+AI is a broad field or term that describe any kind of machine capable of a task that normally requires human intelligence
+such as visual perception, speech recognition, decision-making, or translation between languages.
+
+
+ML refers to computer that can "learn" from data and make predictions or decision without being explicitly programmed to do so.
+This is done using algorithms or models to analyze data. These algorithms use historical data as input to predict new output values.
+
+
+ii. Data Quality
+
+The accuracy of ML is dependent on the quality of data.
+
+Qualities of good data
+
+- coverage
+    It covers the entire domain and scope, all possible scenario
+
+- clean
+    It must be clean, it must not include errors that can affect the decision format
+
+- complete
+    This refers to sufficient data, all the data needed to work without human intervention.
+
+
+
+iii. ML and AI with GCP
+
+Vertex AI is the tool.
+
+If you do not have your training data, you would need to use google pre-trained API,
+else you will use will need to use Vertex AutoML or Custom depending on whether you using
+your code or not.
+
+
+iv. Real world uses of ML
+
+- In searching  # google search
+- Automating processes
+- Understanding Unstructured data
+- Personalized experience
+
+

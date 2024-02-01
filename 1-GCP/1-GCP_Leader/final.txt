@@ -1,0 +1,290 @@
+I)  Cloud Concepts
+
+
+- What is cloud computing ?
+
+The practice of using a network of remote servers hosted on the internet to
+manage, and process data, rather than local server or a personal computer.
+
+
+- The Evolution of cloud hosting
+
+1. Dedicated Server
+This is when one physical machine is dedicated to a single business
+
+i.e runs a single website
+
+Characteristics
+
+* Very expensive
+* High Maintenance
+* High Security (Theoretically)
+
+
+2. Virtual Private Server
+
+This is one physical machine dedicated to multiple businesses via virtualization
+(VMs)
+
+i.e runs multiple websites
+
+
+3. Shared Hosting
+
+One physical machine, shared by hundred of businesses, it relies on most tenants
+
+
+4. Cloud Hosting
+
+Multiple physical machines that acts as one system, each machine are abstracted
+into multiple cloud services.
+
+
+
+- The benefits of cloud computing
+
+Cost-effective:
+    You pay as you go, you only pay for what you use
+
+Global:
+    It allows you go global within minutes
+
+Security:
+    The cloud provider take care of the security
+
+Reliable:
+    Data Backup and disaster recovery
+
+Scalable:
+    It is scalable
+
+Elastic:
+    It is automated to scale, it is elastic
+
+Current:
+    It is always current, and patched with the best.
+
+
+
+- Common Cloud Services
+
+1. Compute:
+    Virtual computer that can run applications, program and code
+
+2. Storage:
+    Virtual hard-drives that can store files
+
+3. Networking:
+    Imagine having a virtual network being able to define internet connections
+
+4. Database:
+    Virtual database for storing reporting data or a database for general purpose
+    web applications
+
+
+
+- Types of cloud computing
+
+i. SaaS
+    A product that is run and managed by the service provider
+
+
+ii. PaaS
+    Focus on the deployment and management of your app, you dont need to provision
+    any infrastructure.
+
+
+iii. IaaS
+    This is when you provision your infrastructure.
+
+
+
+- Shared responsibility model
+
+This is what the customer and what the cloud provider is responsible for.
+Check IMG-1
+
+
+- Cloud Computing Deployment Models
+
+Public Cloud
+
+Public Cloud
+
+Private Cloud
+
+Hybrid Cloud
+
+Multi Cloud
+
+
+
+
+- TCO and CAPEX vs OPEX
+
+Total Cost of ownership is the Capex and Opex involved, typically when you move to
+the cloud more emphasis shift away from capex to opex, since the cloud would handle a
+lot of underlying maintenance.
+
+
+
+
+- Cloud Architecture Terminologies
+
+i. Availability
+    This is the make sure a service remain available
+    i.e using load balancer to distribute load to servers in different zones
+
+
+ii. Scalability
+    This is the ability to scale up and scale down memory and computing power
+
+    You can scale
+        - vertically: add more memory and compute power to a single machine
+        - horizontally: adding more machines to the one that is running
+    Scale out is to add more server while scale in is to remove servers
+
+iii. Elasticity
+    This is the ability to scale horizontally automatically
+
+iv. Fault Tolerance
+    This is when there is no single point to failure.
+    i.e Like database replication
+
+iv. Disaster Recovery
+    How to recover from a data loss.
+
+
+- Evolution of Computing
+Single Tenancy (bare metal)
+
+VMs
+
+Containers
+
+Functions (serverless computing)
+
+
+
+
+II) Global Infrastructure
+
+This refers to the global presence of datacenters, networking and cloud resources
+
+Regions have zones in them
+
+Edge networking is the practice of having compute and data storage resources as
+closest to the end users, in other to reduce latency.
+
+
+Cloud interconnect provides direct physical connections between your on-prem network
+and Google's network. It allows you to transfer data which is cost-effective than
+transferring data over public internet.
+
+Co-location is a data center where resources are available for rent.
+
+
+III) Digital Transformation
+
+- Infrastructure modernization
+
+Replacing legacy hardware and software systems with cloud solutions.
+Allows organization to adopt hybrid architectures and have more infrastructure
+mobility choosing the mix of best cloud service provider offerings for organization
+use-case.
+
+Anthos is the manage compute from both on-prem and public cloud in a single
+unified interface.
+
+
+
+- Business applications platform portfolio
+
+The backbone of cloud service providers are built on-top of robust, well documented
+APIs standardize across all cloud services. Organizations can focus on the configuration and
+interconnections of various systems instead of having to build their own systems.
+
+
+Cloud SDK, Cloud API, Cloud CLI and Google Cloud Documentation are all examples
+
+
+- Application Modernization
+
+Building web-applications on-top of cloud services allows organizations to
+globally deliver and rapidly iterate faster than ever before. CSPs offer
+automated deployment pipelines, AI powered code-reviews, easy staging and testing
+of new features. The ability to test in-production and rollback changes.
+Apps are more durable abd can remain available even when facing catastrophic
+regional failure.
+
+App Engine is an example
+
+
+III) Google Cloud Tools
+
+-Google Cloud Console
+
+This is a web-based, unified console that provides an alternative to command
+line tools. Build, manage and monitor everything from simple wbe apps to complex
+cloud deployments.
+
+-Cloud SDK
+
+You can use cloud SDK( software development kit) to programmatic create, modify , delete and
+interact with Google Cloud resources.
+
+It is available in python and different other language
+
+
+-Cloud CLI
+
+A command line interface to interact with GCP
+
+
+-Cloud Shell
+
+This is an online shell for you to use cli
+
+- Projects and Folders
+
+A project in google cloud is a logical grouping of resources, a cloud resource
+must belong to a project.
+
+Folders allow you to logically group multiple projects that share common IAM permissions
+
+Folders are commonly used to isolate projects for different departments.
+
+
+IV) Google Cloud Adoption Framework
+This deals with how cloud should be used
+
+
+
+
+IV) Core Services
+
+- Compute
+
+Compute Engine:
+    Create and deploy scalable, high performance VMs
+
+Bare Metal Solution:
+    Providing hardware to specialized workloads with low latency on Google Cloud
+
+App Engine:
+    Build and deploy apps on a fully managed, highly scalable platform without having
+    to manage the underlying infrastructure.
+
+Cloud GPUs:
+    Add GPUs to your workloads for ML, scientific computing, and 3D visualization
+
+
+Google Kubernetes Engine (GKE)
+    Reliably, efficiently and securely deploy and scale containerized applications on
+    kubernetes
+
+Sole tenant node
+
+    Helps meet compliance and licensing. There might be need to just have a single
+    node.
+

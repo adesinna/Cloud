@@ -1,0 +1,144 @@
+Infrastructure and Application Modernization
+
+
+I. Modernizing IT infrastructure with GCP
+
+i. Infrastructure modernization
+
+Owning infrastructure for a company is more of stressful, since they have to provide support
+and difficult to scale.
+
+Using public clouds, and it has allowed innovation, saved cost and other things.
+
+
+ii. Compute options in cloud
+
+Public cloud services can provide VMs so to utilize their hardware optimally.
+Now containers made it better, however they are more efficient since they contain exactly
+what the app needs.
+Serveless computing means the bussiness provide the code, and the public cloud provides the
+what is needed for the code to run.
+
+Private Cloud, Hybrid Cloud or Multi Cloud can used.
+
+
+
+iii. GCP compute solutions
+
+Virtual Machines
+
+- Compute Engine
+    This allows you to create VMs that are scalable, they boot quickly and have
+    a persistent disk storage
+
+    usage:
+        If complete control of the over the VM
+        Software that cant be easily container
+
+- VMware Engine
+    This a type of software you can run a VM, it allows you run the VM ware platform
+    efficiently.
+    Google takes care of the networking and others stuffs
+
+
+- Bare Metal
+    Allows you to migrate work loads that needs licensing or might be difficult to move to
+    the other types
+
+
+
+
+
+Containers
+
+    - Google Kubernetes Engine
+        This is the kubernetes for google, which allows spins up
+
+
+
+
+Serverless
+
+    - App engine
+        This is a  platform as a service, allows you to deploy without think of the infrastructural cost
+
+
+    - Cloud Run
+        This allows developer build application in favorite langauge and dependencies
+
+    - Cloud Function
+        This allows you to run codes in agile way, that scales easily.
+
+
+
+
+
+
+II. Modernizing Applications with Google Cloud
+
+i. Cloud change patterns
+
+- They can move application first then change them
+
+- You can decide to migrate them bit by bit
+
+- Greenfield strategy means they build a new product entirely
+
+- Brownfield strategy means building a new one that will replace the old one
+
+- Moving applications without changes
+
+
+
+ii. Challenges in application development
+
+They are choices to be made when developing an application. CICD helps
+in developing applications, you test incrementally.
+
+GKE:
+    This uses k8 and containers, and it is done in a mirco service way. It
+    is easily scalable and helps in disaster recovery.
+
+
+App Engine:
+    It uses serverless computing, hardware and networking, it scales the app automatically
+    It can easily run multiple version of your app for testing.
+
+
+
+
+
+
+III. The value of API
+
+i. Legacy System Challenges
+
+These types of these systems do not give the best and scalability of the
+like cloud systems.
+
+They are not design to serve real time data.
+
+
+
+ii. What are APIs and Modernizing legacy system
+
+APIs enable information to follow into systems. They allow secured integration of legacy
+system can leverage this for modernization.
+This allows businesses to create new revenue streams.
+
+
+iii. Apigee
+
+Apigee is a leading API management platform acquired by Google.
+It enables organizations to design, secure, deploy, and monitor
+APIs efficiently. With features like API design tools, robust security
+mechanisms, deployment flexibility, analytics, and developer
+collaboration support, Apigee streamlines the process of creating,
+managing, and optimizing APIs. It facilitates seamless integration
+with backend systems, ensuring secure and scalable communication
+between applications. As part of Google Cloud Platform,
+Apigee is a key tool for businesses seeking effective API
+management solutions in the modern digital landscape.
+
+
+

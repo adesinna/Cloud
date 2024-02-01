@@ -1,0 +1,253 @@
+Digital Transformation with Google Cloud
+
+I. Why cloud technology is transforming business
+
+
+i. Innovation, Paradigm shifts, and digital transformation
+
+    Innovation throughout history does not come in a linear way, it comes periodically,
+    and this is always inspired by a breakthrough technology.
+
+    There is the age of :
+
+        1. the printing press
+        2. the steam engine
+        3. the electricity
+        4. the transportation
+        5. the first computers
+        6. now the cloud
+
+
+    Each of the these waves triggered thousands of innovations, changing people's life and work
+
+    For example, the printing press gave everyone access to books, encyclopedias and even playing cards.
+
+    It is a paradigm shift which is a fundamental and irreversible change in the way human work and
+    engage with the world.
+
+    Cloud technology is another paradigm shift, which is changing the way human work and live.
+    It is in form of digital transformation, which is when an organization uses new digital technologies,
+    such as public, private, and hybrid cloud platform to create or modify businesses processes, culture
+    and customer experiences, in order to meet the  needs of changing business and market dynamics.
+
+
+
+
+
+
+ii. What is the cloud
+
+    It is a "metaphor" for networks of data centers which store and compute information that is available
+    through the internet. It instead of describing a collection of software, network and complex computer systems, it
+    can be combined to one world "CLOUD".
+
+    Types of Clouds
+
+    1. On premises:
+        This is when an organization hosts it hardware and software application on site, located and
+        operated within an organization data center to serve it specific purpose. They do not need to connect with it
+        via the internet
+
+        Benefits
+
+        - It gives owner full control of their hardware and software
+        - They do not need to keep paying to access their infrastructure
+
+        Drawbacks
+
+        - Since they need to buy physical servers, the procurement process can that months
+        - They need the personnel that can manage them
+        - It is very difficult to scale
+
+
+
+
+    2. Private Cloud:
+        This is when the infrastructure is dedicated  specifically for the use of an
+        organization instead of. It is also known as single tenant or corporate cloud, it would
+        perform same maintenance like on premise, or at a 3rd party location. It is scalable.
+        It is typically connected through the internet!
+
+
+
+    3. Public Cloud:
+        This is when on demand infrastructure are managed by a cloud provider such as google cloud, it is
+        also known as multi tenant cloud. But the information of each organization is hidden from each other.
+
+
+        Services offered
+
+        IAAS:
+            It offers compute and storage services
+
+        PAAS:
+            It offers environment that can be used to develop and build cloud apps
+
+        SAAS:
+            It offers the software itself as a payable service.
+
+
+    4. Hybrid Cloud:
+        This is when they use some infrastructure on prem and the other on cloud
+
+    5. Multi Cloud:
+        This is when an organization uses different public cloud provider
+
+
+
+iii. Benefits of Cloud Computing
+
+    1. It is scalable
+    2. It is flexible since it can be access
+    3. It is agile
+    4. Higher return on investment
+    5. Competitive advantage
+    6. Promotes innovations
+    7. Security is high
+    8. It saves cost
+
+iv. Dangers of not adopting new technology
+
+    If companies do not focus on why they exist, and focus only on how they operate, they risk running into collapsing.
+    They wont evolve as the need of people do.
+
+
+
+v. Cloud Computing Era
+
+    This is where organizations are not just making infrastructure and compute making
+    decisions but truly focusing on transforming.
+
+vi. Challenges that lead to a digital transformation
+
+    1. Data want real time unifed data for decision
+    2. Best infrastructure
+    3. Best hybrid workplace
+    4. Security
+    5. Sustainable future (green energy)
+
+
+
+vii. Google Transformation cloud
+
+    1. Data:
+        Data is the key to unlock value from AI, so GCP can help unify data, data cloud does it
+
+    2. Open Infrastructure
+        Modernizing infrastructure that can help with the computing power.
+
+    3. Collaboration:
+        Work space is a collaboration
+
+    4. Trust
+        The security is trusted
+
+    5. Sustainable technology
+        Green energy
+
+
+
+
+
+
+
+
+II. Fundamental Cloud Concepts
+
+
+i. Total cost of ownership
+
+    This checks the cost of running software on cloud vs running it on prem.
+
+
+ii. CapEX vs OpEx
+
+    Moving to cloud reduces capex and increases opex, capex is the hardware and maintenance cost.
+    Opex is the cost of operating, i.e cloud sub
+
+
+iii. Private Hybrid and Multi cloud
+
+    Organizations today leverage various cloud options, including private, hybrid, and multicloud solutions.
+    Private cloud involves virtualized servers in dedicated environments, offering customization and on-premises control.
+    Hybrid cloud combines private and public cloud environments, fostering flexibility and modernization at a preferred pace.
+    Multicloud integrates two or more public cloud providers, allowing access to diverse strengths. These approaches enhance
+    technological innovation, facilitate modernization, optimize ROI, offer tool flexibility, improve reliability,
+    ensure regulatory compliance, accommodate on-premises needs, and support remote edge locations for distributed applications.
+    Such strategies empower organizations to meet evolving business demands efficiently and effectively.
+
+
+iv. How a network supports digital transformation
+
+    Connectivity is an important concept in cloud, google that cable that connects their data centers all over the world.
+
+    Bandwidth is the amount of data a network can transfer, Mbps. While latency is the amount of time it takes to travel.
+
+    There are regions which contains zones.
+
+
+
+III. Cloud Computing Models and Shared Responsibility
+
+i. IaaS
+    It provides infrastructure that are scalable such as compute, databases, networking, and storage. Cloud provider
+    lease these resources to them so organization can focus on Opex instead of Capex. It takes away the hardware procurement
+    of these resources.
+
+    - It is scalable
+    - It saves time
+    - It is reliable
+
+    If your workload is on unpredictable, the IAAS is useful
+
+
+    For highly flexible, scalable service, while maintaining control of the infrastructure
+
+
+ii. PAAS
+
+    This provides a framework that helps deployment of code, without a need to worry about the
+    infrastructure needed.
+
+    - It is  scalable
+    - It saves time because no need to set up infrastructure
+    - It abstracts management
+    - It is flexible
+
+    For fast test and deployment
+    Unique application
+
+
+    This offers a cost-effective way to build applications
+
+
+
+
+iii. SaaS
+
+    This gives you the all software, it has full abstraction
+
+    - It low maintenance
+    - It is cost-effective
+    - Predictable cost
+    - It is ready available
+
+    It is suitable for project that just needs focus
+    If you want to take advantage of established application
+
+    Features that are ready to use, without controlling it
+
+
+
+iv. Shared responsible model
+
+
+    Infrastructure is cloud and data is organization. See IMG-1
+
+
+
+
+
+
+
+
