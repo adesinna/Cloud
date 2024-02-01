@@ -40,7 +40,13 @@ Public Cloud:
 Multiple Cloud:
     This is when you use more than one public cloud
 
-    This might be used to prevent vendor locking or for disaster recovery
+    This might be used to prevent vendor locking or for disaster recovery  and (replicating the environment)
 
 
+Private Cloud:
+    This is an architecture on prem, that is dedicated to a particular business.
+    Anthos for GCP, AWS Outposts and Azure Stack are different flavors of these private cloud
 
+
+Hybrid Cloud:
+    This is when you are using private and public.
