@@ -1,4 +1,4 @@
-What is cloud computing ?
+1. What is cloud computing ?
 
 This is the delivery of a shared pool of on-demand computing services over the public internet, that can be rapidly
 provisioned and released with minimal management effort or servie provider interaction.
@@ -27,6 +27,20 @@ Characteristics of cloud
 
 - Measured Service
     Resource usage can be monitored, controlled and reported using metering capabilities.
+
+
+
+2. Cloud Deployment Models
+
+
+Public Cloud:
+    This is a cloud that the infrastructure can be connected to over the internet i.e AWS, GCP and AZURE
+
+
+Multiple Cloud:
+    This is when you use more than one public cloud
+
+    This might be used to prevent vendor locking or for disaster recovery
 
 
 
