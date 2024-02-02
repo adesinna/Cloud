@@ -1,0 +1,92 @@
+1. Google Cloud Global Infrastructure
+
+Google Cloud Platform (GCP) has a global infrastructure that consists of data centers and network points of presence
+(PoPs) strategically located around the world.
+The infrastructure is designed to provide high-performance and reliable services to users and businesses
+
+
+Data Centers:
+    Google Cloud operates numerous data centers globally. These data centers house the physical hardware,
+    including servers, storage, and networking equipment, that form the backbone of the cloud infrastructure.
+    Data centers are located in various regions and zones, allowing users to deploy resources in proximity to their
+    target audience or to meet specific compliance requirements.
+
+Regions and Zones:
+    Google Cloud is organized into regions, which are geographic areas that contain one or more data centers.
+    Each region is further divided into zones, which are isolated locations within a region. The use of regions and
+    zones enables users to create highly available and resilient applications by distributing resources across different geographic locations.
+
+
+Network Backbone:
+    Google Cloud's global network is a high-speed, low-latency infrastructure that connects data centers
+    worldwide. The backbone is designed to ensure fast and reliable data transfer between regions and zones.
+    This global network is a crucial component for delivering services with high performance and availability.
+
+
+Edge Locations and Points of Presence (PoPs):
+    Google Cloud has a network of edge locations and PoPs situated at strategic locations around the world.
+    These locations help in caching content and reducing latency for end-users accessing Google Cloud services.
+    Google Cloud CDN (Content Delivery Network) leverages these edge locations to optimize content delivery.
+
+
+Interconnects:
+    Google Cloud offers various options for connecting on-premises data centers to its cloud infrastructure.
+    Dedicated Interconnect and Partner Interconnect are services that provide direct and reliable connections between
+    an organization's network and the Google Cloud network.
+
+Security Infrastructure:
+    Google Cloud places a strong emphasis on security, and its infrastructure includes various features to ensure the
+    confidentiality, integrity, and availability of customer data. This includes encryption, identity and access
+    management, and various security certifications and compliance standards.
+
+
+2. Compute Service Options
+
+Computer Engine (IAAS):
+    This contains virtual machines called instances, which can be deployed in any chosen region and zone.
+    You decide the operating system and the software you decide to put on it.
+
+    You can use public or private images to create instances.
+
+    Managing multiple instances using instance groups, add or remove capacity using autoscaling with instance groups
+
+    Disk can be attached to these instances, and  you can use  storage services.
+
+    SSH can be used to access these instances
+
+
+
+Google Kubernetes Engine (CAAS):
+    Container orchestration system for automating deploying, scaling and managing containers
+
+    This is built on the open source k8 project
+
+    Flexibilty to integrate with on prem Kubernetes
+
+    Uses Compute Engine instances as nodes in a cluster
+
+
+
+
+
+App Engine (PAAS):
+    Fully managed, serverless platform developing and hosting web applications at scale (PAAS)
+
+    GCP provisions servers and scales your app instances based on demand, so all you need to be concerned is your code
+    And it allows you to connect to other Google service like databases and storages.
+
+
+
+Cloud Functions (FAAS):
+    This is a serverless execution environment for building and connecting cloud services. They are event based, to they
+    can be triggered based on an event.
+
+
+
+Cloud Run (FAAS):
+    This is a fully managed compute platform for deploying and scaling containerized applications quickly and securely.
+    This is a serverless compute for containers
+
+
+
+

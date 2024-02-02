@@ -50,3 +50,13 @@ Private Cloud:
 
 Hybrid Cloud:
     This is when you are using private and public.
+
+
+
+3. Cloud Service Model
+
+IAAS
+PAAS
+SAAS
+
+see IMG-1
