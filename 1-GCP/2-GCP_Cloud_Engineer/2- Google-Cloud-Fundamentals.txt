@@ -89,4 +89,80 @@ Cloud Run (FAAS):
 
 
 
+3. Storage and Databases
+
+Storage:
+    -Cloud Storage:
+        This is google's consistent, scalable, large-capacity, highly durable object storage.
+
+        It is durable and has unlimited storage
+
+        It has four storage types
+
+            - Standard  ( no limit)
+            - Nearline  ( < 1/Month)
+            - Coldline  ( < 1/3months)
+            - Archive   ( < 1/yr)     # note the cost decrease down the group
+
+
+        It can be stored in
+
+            - Single Region
+            - Dual Region
+            - Multiple Region
+
+        Use Cases
+            - Content Delivery
+            - Data Lakes
+            - Backups
+
+    - Filestore
+        This is a fully managed NFS file server. Data can be stored from multiple VM instances and Kubernetes clusters
+        This is good when you need a group of instance to access same data
+
+
+
+    - Persistent Disks
+        Durable block storage that are connect to the operating system
+
+        It can be stored in
+
+            -Standard
+            - SSD
+
+Databases:
+    Relational
+
+        - Cloud SQL:
+            This is a fully manages database service, PostgreSQL, mySQL and SQL servers which have high availabilty across
+            zone
+
+        - Cloud Spanner:
+            Scalable relational database service. Supports transactions, strong consistency and synchronous replication
+
+            Highly available across regions and globally
+
+
+
+    Non-Relational
+
+        - Big Table:
+            This is a fully managed, scalable, NoSQL database. It has high through put with low latency and cluster resizing
+            without any downtime
+
+
+        - Datastore:
+            This is a serverless, fast and fully managed NOsql document databases
+
+            For mobile, web and IoT apps, with multi-region replication
+
+
+        - Firestore
+            NO SQL, real ti
+
+
+
+
+
+
 

@@ -1,7 +1,7 @@
 1. What is cloud computing ?
 
 This is the delivery of a shared pool of on-demand computing services over the public internet, that can be rapidly
-provisioned and released with minimal management effort or servie provider interaction.
+provisioned and released with minimal management effort or service provider interaction.
 
 
 Characteristics of cloud
