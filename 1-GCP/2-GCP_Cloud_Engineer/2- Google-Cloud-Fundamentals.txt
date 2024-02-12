@@ -93,7 +93,7 @@ Cloud Run (FAAS):
 
 Storage:
     -Cloud Storage:
-        This is google's consistent, scalable, large-capacity, highly durable object storage.
+        This is google's consistent, scalable, large-capacity, highly durable object storage (document or pictures).
 
         It is durable and has unlimited storage
 
@@ -102,7 +102,7 @@ Storage:
             - Standard  ( no limit)
             - Nearline  ( < 1/Month)
             - Coldline  ( < 1/3months)
-            - Archive   ( < 1/yr)     # note the cost decrease down the group
+            - Archive   ( < 1/yr)     # note the cost decreases down the group
 
 
         It can be stored in
@@ -128,7 +128,7 @@ Storage:
         It can be stored in
 
             -Standard
-            - SSD
+            - SSD  # this is faster than standard
 
 Databases:
     Relational
@@ -158,11 +158,52 @@ Databases:
 
 
         - Firestore
-            NO SQL, real ti
+            NO SQL, real time database
+
+            Optimized for offline use
+
+            Cluster resizing without any downtime
+
+
+        - Memorystore
+            Highly available caching service
+
+
+
+Networking Services:
+    - VPC
+        Virtualized network within Google Cloud
+
+        Network cannot be shared within projects
+
+    - Firewall Rules
+        These are like security groups in AWS, they control the traffic
+
+
+    - Routes
+        This shows how packets should be distributed
 
 
 
 
+    - Load Balancing
+
+        HTTPS LB
+
+            This distributes traffic across regions to ensure that request are routed to the closest region or in the
+            event of a failure or over capacity, to a healthy instance in the next closest region
 
 
+        Network LB
+            This traffic is distributed among instances in the same region based on incoming IP protocol data, such as
+            address, port or protocol.
 
+    - Google Cloud DNS
+
+        Publish and maintain DNS records by using the same infrastructure that google uses.
+
+
+    - Advanced connectivity
+
+        Cloud VPN connects your existing network to your VPC using the internet, while Direct Interconnect does not need
+        to connect using the internet.
