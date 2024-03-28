@@ -1,0 +1,71 @@
+Resource Hierarchy
+
+    What is a resource ?
+        This includes the "service level resources" that you use to process your workload, which includes compute instance VMs,
+        cloud storage bucket. Another inclusion is the account level resources, the organization, the folders and projects
+
+
+    Resource Hierarchy is the configuration and access granting to the various resources both at the service level and
+    account level resources.
+
+
+Resource Hierarchy Structure
+
+    They are organized hierarchically using parent-child relationship. This is designed to map organizational structure
+    to GCP, in order to better manage permission and access control. IAM controls the permission policies.
+
+
+    Domain > Organization > Folders > Projects
+
+
+Billing Account
+
+This is a cloud level resources, which defines who pays for a given set of Google Cloud Resources. Tracks all costs incurred
+by GCP Cloud Usage. It is always linked to a payment profile.
+
+It can be linked to one or more projects
+
+
+
+Cost Management and Budgets Alerts
+
+- Committed Use Discounts
+    This is when you commit to using a minimum level of resources for a specified term
+
+    It can be 1 or 3 years commitment
+
+    Types of Commitments
+
+        - Spend based
+            You commit to spend a minimum amount for a service in a particular region
+
+            25% for a year and 52% for 3 years
+
+        - Resource based
+            You commit to spend a minimum amount for compute engine resources in a particular region
+
+            They are ideal for predictable workload on VMs
+
+            It can be applied across projects
+
+
+    GCP pricing calculator can help you know an estimated amount you likely going to
+    spend
+
+    Cloud Billing Budgets helps you set an amount that you must not go over.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
