@@ -3,6 +3,8 @@
 This is the delivery of a shared pool of on-demand computing services over the public internet, that can be rapidly
 provisioned and released with minimal management effort or service provider interaction.
 
+# they can be accessed over the internet is key importance
+
 
 Characteristics of cloud
 
@@ -28,6 +30,8 @@ Characteristics of cloud
 - Measured Service
     Resource usage can be monitored, controlled and reported using metering capabilities.
 
+
+# Use OBRRM to remember acronym
 
 
 2. Cloud Deployment Models
