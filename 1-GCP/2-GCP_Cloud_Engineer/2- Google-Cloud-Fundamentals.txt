@@ -61,7 +61,7 @@ Google Kubernetes Engine (CAAS):
 
     This is built on the open source k8 project
 
-    Flexibilty to integrate with on prem Kubernetes
+    Flexibility to integrate with on prem Kubernetes
 
     Uses Compute Engine instances as nodes in a cluster
 
@@ -80,6 +80,9 @@ App Engine (PAAS):
 Cloud Functions (FAAS):
     This is a serverless execution environment for building and connecting cloud services. They are event based, to they
     can be triggered based on an event.
+
+    It watches an event like pdf upload, you can write a function in python to convert it to word or something.
+    It is based on an event.
 
 
 
@@ -118,12 +121,14 @@ Storage:
 
     - Filestore
         This is a fully managed NFS file server. Data can be stored from multiple VM instances and Kubernetes clusters
-        This is good when you need a group of instance to access same data
+        This is good when you need a group of instance to access same data.
+
+        Kubernetes cluster is used for this.
 
 
 
     - Persistent Disks
-        Durable block storage that are connect to the operating system
+        Durable block storage that are connected to an operating system
 
         It can be stored in
 
@@ -205,5 +210,23 @@ Networking Services:
 
     - Advanced connectivity
 
-        Cloud VPN connects your existing network to your VPC using the internet, while Direct Interconnect does not need
-        to connect using the internet.
+        Cloud VPN
+            Connects your existing network to your VPC network through an IPSEC connection over the internet
+
+        Direct interconnect
+            It does connect your existing network to your vpc without using the internet, and this makes it highly available
+
+
+
+        Direct Peering
+            Exchange internet traffic between your business network and Google at one of google edge network location
+
+
+        Carrier Peering
+            Connect your infrastructure to Google's network edge through highly available connections using a 3rd party carrier
+
+
+
+
+
+
