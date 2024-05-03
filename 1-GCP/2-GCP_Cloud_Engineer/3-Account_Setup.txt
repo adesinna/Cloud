@@ -18,6 +18,12 @@ Resource Hierarchy Structure
     Domain > Organization > Folders > Projects
 
 
+Note:
+    Projects use service level resources, while others is account level resource
+
+    There is always permission and policy inheritance.
+
+
 Billing Account
 
 This is a cloud level resources, which defines who pays for a given set of Google Cloud Resources. Tracks all costs incurred
@@ -26,11 +32,24 @@ by GCP Cloud Usage. It is always linked to a payment profile.
 It can be linked to one or more projects
 
 
+Types of payment profile
+- Individual
+- Business
+
+Creating a billing Account
+
+    IAM > Roles  # search for billing to see if you can see the billing permission
+
+    Billing > Account management > Manage billing accounts # you can create billing account
+
+    To close billing account click on the billing account > close the billing account
+
+
 
 Cost Management and Budgets Alerts
 
 - Committed Use Discounts
-    This is when you commit to using a minimum level of resources for a specified term
+    This is when you commit to using a minimum level of resources for a specified term # it is good especially when you can predict the workload
 
     It can be 1 or 3 years commitment
 
