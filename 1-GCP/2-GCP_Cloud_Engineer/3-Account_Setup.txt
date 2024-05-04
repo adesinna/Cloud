@@ -60,6 +60,11 @@ Cost Management and Budgets Alerts
 
             25% for a year and 52% for 3 years
 
+            Available for:
+                Cloud SQL database instance
+
+                Google Cloud VMWare Engine
+
         - Resource based
             You commit to spend a minimum amount for compute engine resources in a particular region
 
@@ -67,24 +72,78 @@ Cost Management and Budgets Alerts
 
             It can be applied across projects
 
+            57% discount for most resources
+
+            70% for memory optimized machine types
+
+        - Sustained Use Discount
+
+            Automatic discounts for running compute engine resources a significant portion of the billing month
+
+            Applies to most compute engines and includes VMs created by GKE
+
+
+GCP pricing calculator
 
     GCP pricing calculator can help you know an estimated amount you likely going to
     spend
 
-    Cloud Billing Budgets helps you set an amount that you must not go over.
+
+Cloud Billing Budgets
+    Enables you to track your actual GCP spend against your planned spend
+
+    Budget alert threshold rules are used to trigger email notifications to help stay  informed about your spendings.
+
+
+    The budget can be applied to a billing account or to a specific product.
+
+
+    Cloud Pub/Sub can help you automatic notification and disable a service programmatically
+
+
+Demo for committed Use discount
+
+    Compute engine > committed use discount
+
+
+Reservation is to make sure the VM is always available for you.
+
+For budget and alert, go to the
+    billing > budgets and alerts > create budget
+
+
+You can also enable pub/sub for programmatic cloud monitoring
+
+
+
+
+Exporting Billing Data
+
+    Billing export enables granular billing data (such as usage, cost details and pricing data) to be
+    exported automatically to BigQuery for detailed analysis.
+
+    billing > billing export # make sure you create a dataset
+
+    APIs > Enable big query transfer api
 
 
 
 
 
+Cloud APIs
+
+    Go to APIs and enable the api you need.
 
 
+Admin User
+
+    You can add an admin user.
+
+    Billing Account > Permissions > Assign the roles you want it to have
 
 
+Cloud SDK
+    gcloud is the sdk for GCP
 
-
-
-
-
-
+    google sdk for linux, so you can use it and interact with it.
 
