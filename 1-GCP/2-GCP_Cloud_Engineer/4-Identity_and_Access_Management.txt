@@ -1,0 +1,47 @@
+Principle of Least Privilege
+    A user, program or process should have only the bare minimum privileges necessary
+    to perform its function
+
+
+
+Cloud IAM
+    This let you manage access control by defining who, has what access, for which resource.
+
+    Permission are written in roles, these roles are the associated with members.
+
+
+
+    Members:
+        This is an identity (email) that can interact with some resources
+
+
+    Roles:
+        This is a named collections of permissions that grants access to a resource
+
+        You cannot grant a permission directly to a user, but it would be put in a
+        role, then the role would be associated with the user.
+
+
+
+Policies and Conditions
+    It would be written in YAML, # version 3 allow conditional statements
+
+
+
+Service Accounts
+    This is account used by an application
+
+
+Cloud Identity
+    This group of memebers together for an organization
+
+
+    Single Sign On: It is used to sign in once to permitted resoucres
+
+    Active Directory, It is used to authenticate user
+
+
+
+
+
+
