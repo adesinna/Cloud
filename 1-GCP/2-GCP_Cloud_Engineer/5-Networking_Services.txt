@@ -1,0 +1,21 @@
+Networking
+    IP Address is used to identify a computer within the network
+
+
+   Class A 0.0.0.0 - 127.255.255.255  # fixed first octet
+
+   Class B 128.0.0.0 - 191.255.255.255 # fixed first and second octet
+
+   Class C 192.0.0.0 - 223.255.255.255 # fixed first and second and third octet
+
+
+
+   192.168.0.0/16 # 8*2 so the last two is not fixed
+
+
+
+
+VPC
+    Virtual Private Cloud allows you virtual network in GCP
+
+    Resource within a v
