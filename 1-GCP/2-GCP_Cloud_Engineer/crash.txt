@@ -1,0 +1,7 @@
+Cloud Storage
+    1. Cloud SQL
+        This is a relational database of GCP
+
+    2. Document Storage
+        Cloud Datastore
+        Cloud Storage like Buckets

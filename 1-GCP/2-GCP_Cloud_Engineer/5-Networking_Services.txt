@@ -18,4 +18,6 @@ Networking
 VPC
     Virtual Private Cloud allows you virtual network in GCP
 
-    Resource within a v
+    Resource within a vpc can communicate within each other
+
+    VPC peering is it is used to make vpcs communicate with each other
