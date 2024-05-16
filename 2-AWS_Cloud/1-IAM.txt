@@ -1,0 +1,20 @@
+Users and Groups
+    IAM means identity and Access Management
+
+    Groups contains multiple users, and a user can belong to multiple groups
+
+    Permissions in AWS refer to the actions a user or a service can perform on AWS resources.
+    These permissions are granted through policies.
+
+    Policies in AWS are JSON documents that define permissions.
+    There are two types of policies
+
+    Inline policy is only attached to a user
+
+    You can use aws cli or the console
+
+    You can use accesskey to login after downloading aws cli
+
+    Some services need Roles to perform some actions just like a user
+
+    IAM Credentials report lists all your AWS Account's IAM Users and the status of their various credentials.
