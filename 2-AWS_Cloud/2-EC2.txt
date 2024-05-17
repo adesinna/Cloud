@@ -1,0 +1,42 @@
+# You can use cost and billings to set up budgets, just not to spend more than expected
+
+ Ec2 are virtual machines, this is the IAAS for AWS
+
+ Userdata are script that are used when booting
+
+
+
+EC2 Instance Types
+    General Purpose:
+        Great for a diversity of workloads such as web servers or code repositories
+
+    Compute Optimized:
+        Great for compute intensive tasks that require high performance
+
+
+    Memory Optimized:
+        Great for fast performance for large data sets in memory (databases)
+
+
+    Storage Optimized:
+        Great for storage intensive task that require high, sequential read write access
+        to large data.
+
+
+Security Groups:
+    Are the rules that controls the firewalls. You can specify ports, even other security groups
+
+    Inbound rules: Are rules that are allowed for incoming traffic
+    Outbound rules: Are rules that are allowed for out-coming traffic
+
+    - SG can be attached to multiple instances
+    - Locked down to region/VPC combination
+
+    ssh -i key.pem user@ip # how to ssh
+
+    You can attached role to EC2
+    This allows the ec2 to do some operations in the instance
+
+    Roles > Attach it to the instances
+
+    You can reserve instances for 1 or 3 years
