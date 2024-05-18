@@ -1,0 +1,48 @@
+EBS Volumes:
+    This is an elastic block storage, it is a network drive you can attach to your instance
+    It allows you to persist data even after the instance is terminated
+    It can only be mounted to on instance at a time.
+    It is a network drive, it uses network to communicate with the instance
+    It is locked to an availability zone
+    The root EBS volume is deleted when the instance is terminated
+
+
+EBS Snapshots:
+    This is a backup of an EBS volume, you can use this to restore an EBS volume
+    in another zone.
+
+
+AMI:
+    Amazon Machine Image, it allows customization of your own image.
+    Create an instance, create am AMI with instance, so you can use it next time
+
+Ec2 Instance Store:
+    Just like EBS volume but it is a hardware disk.
+
+
+    Types of EBS Volume:
+        - General Purpose(SSD) # most workload
+        - Provisioned IOPS # large database
+        - Throughput Optimized HD # Big Data and Data Warehouses
+        - Cold HDD # file servers
+        - Magnetic # backups and archives
+
+
+EBS Multi-Attach:
+    This a special EBS volume that allows multiple instances attached
+    to the Volume.
+
+    16 is the max
+
+EBS Encryption
+    This would encrypt everything about the volume
+
+
+
+EFS:
+    Elastic File System, it can be mounted to many EC2 instances.
+
+Storage Class
+    Standard - Frequently
+    Infrequent access - Once in a while
+    Archive: Rarely accessed
