@@ -1,0 +1,32 @@
+Scalability:
+    This is the ability to provide more infrastructure.
+        Horizontal Scalability:
+            More units are provided to the one that is available, that another machine is provisioned to join the
+            already available machine. You can scale out or in
+
+        Vertical Scalability:
+            The machine is changed, and replaced with a stronger or weaker machine. You can scale up or down
+
+
+
+Load Balancing:
+    They are servers that spread the traffic to multiple instances
+
+    Health checks allows the load balancer check whether an instance is healthy or not
+
+    Types of Load Balances
+        Classic Load Balancers:
+            HTTP, HTTPS, TCP, SSL
+
+        Application Load Balancer:
+            HTTP, HTTPS, Websockets
+            They route based on name, one name can route to the ones on cloud
+            while the other sends them to the on prem center
+
+        Network Load Balancer:
+            TCP, TLS, UDP
+
+        Gateway Load Balancer:
+            Operates in the Layer 3 (Network Layer)
+
+
