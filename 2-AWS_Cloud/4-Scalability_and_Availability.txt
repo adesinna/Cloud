@@ -25,8 +25,31 @@ Load Balancing:
 
         Network Load Balancer:
             TCP, TLS, UDP
+            They can handle millions of request by sec
+            It can use static ips
+
 
         Gateway Load Balancer:
             Operates in the Layer 3 (Network Layer)
+            They can inspect the traffic before it reaches your targets
 
 
+
+    Stickiness:
+        It makes sure the load balance always route the user to the same instance behind the load balancer
+
+
+    Cross Zone Load Balancing
+        This is when you use to load balancer to send this across az
+
+
+    SSL/TLS Certificates
+        SNI allows use different target groups for multiple certificates. # for ALB and NLB
+
+    Draining Connection
+        It allows deregistered instances to finish they request, before deleting them
+
+
+    Auto Scaling Group
+        This allows you to scale, horizontally
+        It can use cloud watch to scale too
