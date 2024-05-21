@@ -47,7 +47,7 @@ Load Balancing:
         SNI allows use different target groups for multiple certificates. # for ALB and NLB
 
     Draining Connection
-        It allows deregistered instances to finish they request, before deleting them
+        It allows de-registered instances to finish they request, before deleting them
 
 
     Auto Scaling Group
