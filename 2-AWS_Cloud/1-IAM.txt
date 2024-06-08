@@ -18,3 +18,5 @@ Users and Groups
     Some services need Roles to perform some actions just like a user
 
     IAM Credentials report lists all your AWS Account's IAM Users and the status of their various credentials.
+
+    SDK are what software developer use in their codes
