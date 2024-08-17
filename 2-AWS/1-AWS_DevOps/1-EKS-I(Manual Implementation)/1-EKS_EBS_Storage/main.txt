@@ -1,0 +1,60 @@
+We have 3 major types of storage on aws for the kubernetes
+
+- EBS
+- EFS
+- FSx for Luster CSI
+
+For this lecture, we are going to be using EBS CSI driver for persistent
+storage for mysql
+
+EBS provides block storage for EC2 and containers instances on aws, they can be detached
+and would persist independently.
+
+It is situable for database style application that rely on random reads and writes.
+
+
+Step 1: Create IAM policy for EBS
+
+    Go to Services -> IAM
+    Create a Policy
+    Select JSON tab and copy and paste the 1-policy.json
+    Click on Review Policy
+    Name: Amazon_EBS_CSI_Driver
+    Description: Policy for EC2 Instances to access Elastic Block Store
+    Click on Create Policy
+
+
+Step 2: We associate the role to the worker node
+    This would allow the pods to access the ebs volume that was created
+
+    1. Get Worker node IAM Role ARN
+        kubectl -n kube-system describe configmap aws-auth
+
+    2. Copy the rolearn
+        # this is how it looks like
+        arn:aws:iam::479465295367:role/eksctl-test1-nodegroup-test1-ng-pu-NodeInstanceRole-EN7F3UXG23F
+
+    3. Attach the policy to that role   #roles refer to sets of permissions that grant entities (like users, services, or applications) access to AWS resources.
+
+        Go to Services -> IAM -> Roles
+        Search for role with name eksctl-test1-nodegroup and open it
+        Click on Permissions tab
+        Click on Attach Policies
+        Search for Amazon_EBS_CSI_Driver and click on Attach Policy
+
+Step 3: Deploy EBS CSI driver
+
+        # Deploy EBS
+        kubectl apply -k "github.com/kubernetes-sigs/aws-ebs-csi-driver/deploy/kubernetes/overlays/stable/?ref=master"
+
+        # Verify ebs-csi pods running
+        kubectl get pods -n kube-system
+
+
+Step 4
+    Deploy the manifest
+
+    And dont forget to encode the secrets
+
+
+# sometimes apps might not run because of the limit constraint

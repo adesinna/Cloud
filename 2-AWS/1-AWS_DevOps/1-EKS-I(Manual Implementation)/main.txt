@@ -1,0 +1,165 @@
+This course would implement everything manually then use IAC in the next course
+
+
+
+
+This cli helps us to create and manage clusters on AWS.
+
+uname -m # to check the type of linux you are using
+aarch = arm
+
+1. We install the AWS CLI on Ubuntu
+
+sudo apt-get update -y
+sudo apt install unzip -y
+curl "https://awscli.amazonaws.com/awscli-exe-linux-aarch64.zip" -o "awscliv2.zip"
+unzip awscliv2.zip
+sudo ./aws/install
+aws --version
+
+
+2. Create IAM user with full admin access
+
+aws configure
+
+# Configure AWS CLI with provided values
+aws configure set aws_access_key_id
+aws configure set aws_secret_access_key
+aws configure set default.region ap-southeast-2
+aws configure set default.output_formt json
+
+
+aws ec2 describe-vpcs
+
+3. Next Install kubectl binary
+
+curl -O https://s3.us-west-2.amazonaws.com/amazon-eks/1.27.1/2023-04-19/bin/linux/arm64/kubectl
+curl -O https://s3.us-west-2.amazonaws.com/amazon-eks/1.27.1/2023-04-19/bin/linux/arm64/kubectl.sha256
+sha256sum -c kubectl.sha256
+openssl sha1 -sha256 kubectl
+chmod +x ./kubectl
+mkdir -p $HOME/bin && cp ./kubectl $HOME/bin/kubectl && export PATH=$HOME/bin:$PATH
+echo 'export PATH=$HOME/bin:$PATH' >> ~/.bashrc
+kubectl version --short --client
+
+
+4. Install eksctl
+
+# for ARM systems, set ARCH to: `arm64`, `armv6` or `armv7`
+ARCH=arm64
+PLATFORM=$(uname -s)_$ARCH
+
+curl -sLO "https://github.com/eksctl-io/eksctl/releases/latest/download/eksctl_$PLATFORM.tar.gz"
+
+# (Optional) Verify checksum
+curl -sL "https://github.com/eksctl-io/eksctl/releases/latest/download/eksctl_checksums.txt" | grep $PLATFORM | sha256sum --check
+
+tar -xzf eksctl_$PLATFORM.tar.gz -C /tmp && rm eksctl_$PLATFORM.tar.gz
+
+sudo mv /tmp/eksctl /usr/local/bin
+
+
+You can use bash.sh to implement all these
+
+
+
+
+
+AWS EKS CORE OBJECTS
+
+i. EKS Control Plane # the components of control plane
+ii. Worker Nodes & Node Groups # work nodes
+iii. Fargate Profiles(Serverless) # give you the nodes based on the resource it needs
+iv. VPC # the Virtual Private Cloud
+
+
+How to create cluster
+
+eksctl create cluster --name=test1 \
+                      --region=us-west-1 \
+                      --zones=us-west-1a,us-west-1b\
+                      --without-nodegroup
+
+note:
+This cluster does not have a worker node
+
+You can list the clusters you have
+
+eksctl get clusters
+
+
+To enable and use AWS IAM roles for Kubernetes service accounts on our EKS cluster,
+we must create & associate OIDC identity provider.
+
+eksctl utils associate-iam-oidc-provider \
+    --region us-west-1 \
+    --cluster test1 \
+    --approve
+
+
+Next we create key-pair
+
+Create a new EC2 Keypair with name as kube-demo
+This keypair we will use it when creating the EKS NodeGroup.
+This will help us to login to the EKS Worker Nodes using Terminal.
+
+
+
+Creating Node groups
+
+# Create Public Node Group
+eksctl create nodegroup --cluster=test1 \
+                       --region=us-west-1 \
+                       --name=test1-ng-public1 \
+                       --node-type=t3.medium \
+                       --nodes=1 \
+                       --nodes-min=1 \
+                       --nodes-max=2 \
+                       --node-volume-size=20 \
+                       --ssh-access \
+                       --ssh-public-key=kube-demo \
+                       --managed \
+                       --asg-access \
+                       --external-dns-access \
+                       --full-ecr-access \
+                       --appmesh-access \
+                       --alb-ingress-access
+
+# Incase you want to scale it up or down
+
+eksctl scale nodegroup --cluster=test1 --nodes=2 --name=test1-ng-public1 # this is to add more nodes, you can scale up
+                                                                           # or down
+
+# List EKS clusters
+eksctl get cluster
+
+# List NodeGroups in a cluster
+eksctl get nodegroup --cluster=test1
+
+# List Nodes in current kubernetes cluster
+kubectl get nodes -o wide
+
+# Our kubectl context should be automatically changed to new cluster
+kubectl config view --minify
+
+
+We can login to the worker nodes
+
+ssh -i kube-demo.pem ec2-user@<Public-IP-of-Worker-Node>  # add the key before you login
+
+Delete cluster
+
+eksctl delete cluster test1
+
+
+
+
+# If you log out of the vm and you want to login in
+
+# Redo bash.sh
+aws eks update-kubeconfig --name test1 --region west-1
+
+
+# selector app deletion
+
+kubectl delete pods --selector=app=customer --field-selector=status.phase!=Running
