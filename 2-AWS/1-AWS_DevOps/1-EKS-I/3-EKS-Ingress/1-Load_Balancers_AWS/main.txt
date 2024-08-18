@@ -48,10 +48,10 @@ each designed to handle different types of traffic and workloads.
       Provides a single entry and exit point for traffic and seamlessly redirects traffic to the virtual appliances.
 
  Key Differences and Considerations:
- ALB is optimal for web applications needing advanced routing features, such as path based or host based routing.
- NLB is the goto choice for high performance applications requiring low latency and the ability to handle volatile traffic patterns.
- CLB is suitable for older applications but is generally being phased out in favor of ALB and NLB.
- GWLB is specialized for integrating virtual appliances and offers unique networking capabilities.
+     ALB is optimal for web applications needing advanced routing features, such as path based or host based routing.
+     NLB is the goto choice for high performance applications requiring low latency and the ability to handle volatile traffic patterns.
+     CLB is suitable for older applications but is generally being phased out in favor of ALB and NLB.
+     GWLB is specialized for integrating virtual appliances and offers unique networking capabilities.
 
 Each load balancer type supports health checks, automatic scaling, and integration with other AWS services,
 but your choice should depend on your application's specific needs and the type of traffic you expect to handle.
