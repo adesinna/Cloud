@@ -1,0 +1,12 @@
+You can create the fargate profile using eksctl
+
+Use the fargate.sh
+
+eksctl get fargateprofile --cluster test1
+
+eksctl delete fargateprofile --cluster test1 --name test1-fargate --wait
+
+eksctl delete cluster # you can just delete the cluster itself
+
+when running fargate always add your limit range for pods
+

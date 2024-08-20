@@ -28,3 +28,38 @@ Integration with ECS and EKS:
 Fargate is particularly useful when you want to focus on developing and deploying applications
 rather than managing the underlying infrastructure. It is ideal for running microservices, batch processing,
 and other containerized workloads in a serverless environment.
+
+Fargate controller is deployed
+
+- You can bring existing pods to fargate
+
+- It runs across AZs for HA
+
+- One pod is in one EC2 fargate instances
+
+- You alone pay for what you need
+
+- Networking and Security is top notched
+
+
+We can have
+    EC2 managed
+    Fargates Only
+
+
+Note
+
+When using AWS Fargate with EKS (Elastic Kubernetes Service), the Fargate profiles allow you to run pods
+without managing the underlying EC2 instances. However, Fargate does not support running the AWS Load
+Balancer Controller or other Ingress controllers directly on Fargate.
+
+For this reason, if you need to use an Ingress resource (which requires an Ingress controller),
+you'll need at least one managed node group in your EKS cluster.
+The managed node group provides the necessary EC2 instances where you can deploy
+the Ingress controller (e.g., AWS Load Balancer Controller). This setup allows you to route external traffic
+to your Fargate-based pods through the Ingress.
+
+In summary:
+
+Fargate only: No Ingress support directly.
+Fargate + Managed Node Group: Allows you to use Ingress, as the Ingress controller can run on the managed node group.
