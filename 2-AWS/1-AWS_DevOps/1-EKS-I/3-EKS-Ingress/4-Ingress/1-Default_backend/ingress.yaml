@@ -9,7 +9,7 @@ metadata:
     alb.ingress.kubernetes.io/load-balancer-name: app1ingressrules
 
     # Ingress Core Settings
-    alb.ingress.kubernetes.io/scheme: internet-facing # publicly accessible
+    alb.ingress.kubernetes.io/scheme: internet-facing # publicly accessible, internal for within the EKS
 
     # Health Check Settings
     alb.ingress.kubernetes.io/healthcheck-protocol: HTTP

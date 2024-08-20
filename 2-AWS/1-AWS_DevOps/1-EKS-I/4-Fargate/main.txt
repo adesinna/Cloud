@@ -1,0 +1,30 @@
+AWS Fargate is a serverless compute engine for containers that works with Amazon Elastic Container Service (ECS)
+and Amazon Elastic Kubernetes Service (EKS). With Fargate, you don't need to manage or provision servers,
+as it allows you to run containers without worrying about the underlying infrastructure.
+
+
+Here are the key aspects of Fargate:
+
+Serverless Containers:
+    Fargate automatically allocates the necessary compute resources to run containers,
+    eliminating the need to manage EC2 instances.
+
+Seamless Scaling:
+    It scales up or down automatically depending on the needs of your containers,
+    providing the right amount of compute capacity for your workloads.
+
+Isolation:
+    Each Fargate task or pod runs in its own isolated environment,
+    providing enhanced security.
+
+Cost Efficiency:
+    You pay only for the resources your containers use, which includes vCPU and memory.
+    This can be more cost-effective for certain types of workloads compared to traditional EC2-based hosting.
+
+Integration with ECS and EKS:
+    Fargate can be used with both ECS and EKS, providing flexibility in how
+    you manage your containerized applications.
+
+Fargate is particularly useful when you want to focus on developing and deploying applications
+rather than managing the underlying infrastructure. It is ideal for running microservices, batch processing,
+and other containerized workloads in a serverless environment.
