@@ -1,0 +1,22 @@
+Step 1: Create simple ECR repository via AWS Console
+
+Repository Name: testing_nginx
+Tag Immutability: Enable
+Scan on Push: Enable
+
+uri: 479465295367.dkr.ecr.us-west-1.amazonaws.com/testing_nginx
+
+Step2: Build your docker image
+
+docker build -t 479465295367.dkr.ecr.us-west-1.amazonaws.com/testing_nginx:v1 .
+
+docker build --platform linux/amd64 -t your-image-name . # if the image doesnt work on fargate use this
+
+
+Step 3: Docker login (AWS would login to docker)
+
+aws ecr get-login-password --region us-west-1 | docker login --username AWS --password-stdin 479465295367.dkr.ecr.us-west-1.amazonaws.com
+
+Step 3: Push the image
+
+docker push 479465295367.dkr.ecr.us-west-1.amazonaws.com/testing_nginx:v1
