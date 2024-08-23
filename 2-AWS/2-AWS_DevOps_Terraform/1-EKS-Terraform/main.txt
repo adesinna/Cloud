@@ -1,0 +1,10 @@
+    awscli
+    terraform
+    kubectl
+
+Connect to the cluster
+
+aws eks --region <region-code> update-kubeconfig --name <cluster_name>
+
+aws eks --region us-west-1 update-kubeconfig --name test-eksdemo1
+
