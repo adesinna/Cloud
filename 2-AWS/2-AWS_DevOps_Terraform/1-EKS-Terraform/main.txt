@@ -8,3 +8,4 @@ aws eks --region <region-code> update-kubeconfig --name <cluster_name>
 
 aws eks --region us-west-1 update-kubeconfig --name test-eksdemo1
 
+aws eks update-kubeconfig --region us-west-2 --name test-eksdemo1
