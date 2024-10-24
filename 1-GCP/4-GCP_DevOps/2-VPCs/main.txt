@@ -1,1 +1,14 @@
 gcloud config set project devops-437421
+
+
+ssh-keygen -C vagrant # vagrant is the usernamr
+
+cd ~/.ssh
+
+There would be both public and private key
+
+cat the private key
+
+Then go to instance > edit > add sshkey
+
+ssh -i "private-key-path" vagrant@publicip

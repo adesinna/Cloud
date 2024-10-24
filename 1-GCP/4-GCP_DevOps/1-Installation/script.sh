@@ -44,6 +44,6 @@ echo "deb [signed-by=/usr/share/keyrings/hashicorp-archive-keyring.gpg] https://
 sudo apt update && sudo apt install terraform -y
 terraform -version
 
-echo "AWS CLI setup, kubectl, eksctl, and Terraform installation completed."
+echo "GCP CLI setup, kubectl, eksctl, and Terraform installation completed."
 
 exit
